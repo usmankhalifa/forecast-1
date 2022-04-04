@@ -40,6 +40,9 @@ dependencies:
   location: ^4.3.0
   google_maps_flutter: ^2.0.6
   shared_preferences: ^2.0.5
+  carousel_slider: ^4.0.0
+  zoom_widget: ^0.2.1
+  webview_flutter: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +70,34 @@ flutter:
     - images/weather.png
     - images/halfsun.png
     - images/fullsun.png
+    - assets/downloads.png
+    - assets/pic.png
+    - assets/flower.jpg
+    - assets/background3.png
+    - assets/images.png
+    - assets/knowledge.png
+    - assets/knowledee.jpg
+    - assets/rice.jpg
+    - assets/rice2.jpg
+    - assets/cashew.jpg
+    - assets/cassava.jpg
+    - assets/cotton.jpg
+    - assets/ginger.jpg
+    - assets/maize.jpg
+    - assets/oilpalm.jpg
+    - assets/sesajme.jpg
+    - assets/sorghum.jpg
+    - assets/soybeans.jpg
+    - assets/cocoa.jpg
+    - assets/cassavaA.jpg
+    - assets/beansA.jpg
+    - assets/cottonA.jpg
+    - assets/gingerA.jpg
+    - assets/maizeA.jpg
+    - assets/riceA.jpg
+    - assets/sesameA.jpg
+    - assets/soyaA.jpg
+    - assets/nirsal.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
