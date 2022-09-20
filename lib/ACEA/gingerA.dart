@@ -23,12 +23,13 @@ class _gingerACEA extends State<gingerACEA> {
           ],
         ),
         body: Center(
-            child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
+            child: SingleChildScrollView(
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
               new Text(
-                'Overlay of Ginger',
+                'Overlay of Cassava ACEA across Nigeria',
                 style: new TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.w600,
@@ -44,7 +45,97 @@ class _gingerACEA extends State<gingerACEA> {
                     image: Image.asset("assets/gingerA.jpg").image,
                   ),
                 ),
-              ))
-            ])));
+              )),
+              Padding(
+                  padding: const EdgeInsets.fromLTRB(25.0, 10.0, 25.0, 10.0),
+                  child: Table(
+                    //table border
+                    children: [
+                      TableRow(children: [
+                        TableCell(
+                            child: Text(
+                          "STATES ",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        )),
+                        TableCell(
+                            child: Text(
+                          "L.G.A ",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        )),
+                        TableCell(
+                            child: Text(
+                          "PROXIMAL LOCATIONS",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        )),
+                      ]),
+                      TableRow(children: [
+                        TableCell(child: Text("KADUNA")),
+                        TableCell(child: Text("Zangon Kataf")),
+                        TableCell(
+                            child: Text(
+                                "Zonkwa, Samaru, Katab, Zaman Dabo, Gidan Kigudu, Sako")),
+                      ]),
+                      TableRow(children: [
+                        TableCell(child: Text(" ")),
+                        TableCell(child: Text("Jemaa")),
+                        TableCell(
+                            child:
+                                Text("Anji, Unguwa Bako, Nungu, Anga, Akwa")),
+                      ]),
+                      TableRow(children: [
+                        TableCell(child: Text(" ")),
+                        TableCell(child: Text("Kachia")),
+                        TableCell(child: Text("Jere ")),
+                      ]),
+                      TableRow(children: [
+                        TableCell(child: Text(" ")),
+                        TableCell(child: Text("Jaba")),
+                        TableCell(child: Text("Kwoi")),
+                      ]),
+                      TableRow(children: [
+                        TableCell(child: Text("BENUE")),
+                        TableCell(child: Text("Makurdi ")),
+                        TableCell(
+                            child: Text(
+                                "Makurdi, Anjie, Ogoh, Ataata, Utenger, Gyushage, Gwegwe, Atsaha")),
+                      ]),
+                      TableRow(children: [
+                        TableCell(child: Text("NASARAWA")),
+                        TableCell(child: Text("Keffi")),
+                        TableCell(child: Text("Keffi")),
+                      ]),
+                      TableRow(children: [
+                        TableCell(child: Text(" ")),
+                        TableCell(child: Text("Akwanga ")),
+                        TableCell(child: Text("Akwanga")),
+                      ]),
+                      TableRow(children: [
+                        TableCell(child: Text("GOMBE")),
+                        TableCell(child: Text("Balanaga")),
+                        TableCell(child: Text("Balanga")),
+                      ]),
+                      TableRow(children: [
+                        TableCell(child: Text("NIGER")),
+                        TableCell(child: Text("Gurara ")),
+                        TableCell(child: Text("Gurara")),
+                      ]),
+                      TableRow(children: [
+                        TableCell(child: Text("IMO")),
+                        TableCell(child: Text("Mbaitoli")),
+                        TableCell(child: Text("Nwaorieubi, Ukwa Ngwu")),
+                      ]),
+                      TableRow(children: [
+                        TableCell(child: Text("ABIA")),
+                        TableCell(child: Text("Uwka East/West")),
+                        TableCell(child: Text(" ")),
+                      ]),
+                      TableRow(children: [
+                        TableCell(child: Text("ANAMBRA")),
+                        TableCell(child: Text("Awka North")),
+                        TableCell(child: Text("Igbariam")),
+                      ]),
+                    ],
+                  ))
+            ]))));
   }
 }
