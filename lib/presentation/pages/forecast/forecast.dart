@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:forecast/constants.dart';
 import 'package:forecast/data/models/place_search_result_model.dart';
 import 'package:forecast/domain/usecases/get_aggregate_forecast.dart';
+import 'package:forecast/main1.dart';
 import 'package:forecast/presentation/pages/forecast/current_forecast_card.dart';
 import 'package:forecast/presentation/pages/forecast/forecast_action_box.dart';
 import 'package:forecast/presentation/pages/forecast/forecast_loading_box.dart';
@@ -31,7 +32,7 @@ class _ForecastScreenState extends State<ForecastScreen> {
   void initState() {
     super.initState();
     if (widget.place != null) {
-      WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+      WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
         Provider.of<ForecastProvider>(context, listen: false)
             .setSearchMode(true);
         Provider.of<ForecastProvider>(context, listen: false).loadForecasts(
@@ -57,6 +58,19 @@ class _ForecastScreenState extends State<ForecastScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
+      appBar: AppBar(
+        backgroundColor: kPrimaryColor,
+        title: const Text('Forecast'),
+        automaticallyImplyLeading: false,
+  leading: new IconButton(
+    icon: new Icon(Icons.arrow_back, color: Colors.white),
+    onPressed: () =>  Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Appp()),
+              ),
+  ), 
+      ),
       resizeToAvoidBottomInset: false,
       body: Container(
         width: double.infinity,

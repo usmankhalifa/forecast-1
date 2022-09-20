@@ -15,7 +15,7 @@ class MyApppp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.green[400],
           centerTitle: true,
-          title: Text("Map"),
+          title: Text("SCP"),
           actions: <Widget>[
             IconButton(
               icon: Image.asset('assets/nirsal.png'),
